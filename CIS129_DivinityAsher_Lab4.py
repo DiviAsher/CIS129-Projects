@@ -42,5 +42,5 @@ else:
 # This code prints the determined bonus amount and acknowledges whether the bonus is at its maximum.
 print('The store bonus amount is $', storeAmount)
 print('The employee bonus amount is $', empAmount)
-if (storeAmount == 6000) AND (empAmount == 75):
+if (storeAmount == 6000) and (empAmount == 75):
   print('Congrats! You have reached the highest bonus amounts possible!')
