@@ -4,11 +4,17 @@
 # This program calculates the bonuses received based on the store's sale amount
 
 # Variables
-monthlySales = float(input(prompt, 'monthly sales?: $')) # monthly sales amount
+monthlySales = 0 # monthly sales amount
 storeAmount = 0 # store bonus amount
 empAmount = 0 # employee bonus amount
 salesIncrease = 0 # percent of sales increase
-prompt = string("What is your shop's ") # beginning snippet of user prompt
+prompt = "What is your shop's " # beginning snippet of user prompt
 
 # User inputs for monthly sales and increase rates
-input(monthlySales)
+monthlySales = float(input(prompt, 'monthly sales?: $'))
+
+# Calculation code for determining store bonus
+if monthlySales >= 110000:
+  storeamount = 6000
+elif monthlySales >= 100000:
+  storeamount = 5000
