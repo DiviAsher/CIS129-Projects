@@ -9,7 +9,7 @@ storeAmount = 0 # store bonus amount
 empAmount = 0 # employee bonus amount
 salesIncrease = 0 # percent of sales increase
 salePrompt = "What is your shop's monthly sale amount?: $" # prompt for shop's monthly sale amount
-incPrompt = "What is your shop's sale increase percentage?: "
+incPrompt = "What is your shop's sale increase percentage?: " # prompt for shop's sale increase percentage
 
 # User inputs for monthly sales and increase rates
 monthlySales = float(input(salePrompt))
