@@ -8,10 +8,11 @@ monthlySales = 0 # monthly sales amount
 storeAmount = 0 # store bonus amount
 empAmount = 0 # employee bonus amount
 salesIncrease = 0 # percent of sales increase
-prompt = "What is your shop's " # beginning snippet of user prompt
+salePrompt = "What is your shop's monthly sale amount?: $" # prompt for shop's monthly sale amount
+incPrompt = "What is your shop's sale increase percentage?: "
 
 # User inputs for monthly sales and increase rates
-monthlySales = float(input(prompt, 'monthly sale amount?: $'))
+monthlySales = float(input(salePrompt))
 
 # This code determines the store bonus based on monthly sales
 if monthlySales >= 110000:
@@ -26,7 +27,7 @@ else:
   storeAmount = 0
 
 # This code calculates the sale increase percentage
-salesIncrease = float(input(prompt, 'sale increase percentage?'))
+salesIncrease = float(input(incPrompt))
 salesIncrease = salesIncrease / 100
 
 # This code determines the employee bonus
