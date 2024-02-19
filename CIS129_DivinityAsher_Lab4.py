@@ -7,7 +7,7 @@
 monthlySales = float(input(prompt, 'monthly sales?: $')) # monthly sales amount
 storeAmount = 0 # store bonus amount
 empAmount = 0 # employee bonus amount
-salesIncrease =  # percent of sales increase
+salesIncrease = 0 # percent of sales increase
 prompt = string("What is your shop's ") # beginning snippet of user prompt
 
 # User inputs for monthly sales and increase rates
