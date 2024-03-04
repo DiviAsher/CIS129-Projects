@@ -1,4 +1,4 @@
-# CIS129_DivinityAsher_Lab6
+# CIS129_DivinityAsher_Lab6 - Hotdog Cookout Lab 
 # Divinity Asher
 # 03/04/2024
 
