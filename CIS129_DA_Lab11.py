@@ -9,12 +9,11 @@ def writeText():
     print()
     with open('grades.txt', mode='w') as grades:
         gradeInput = grades.write(input("Please enter the grades from the class, use -1 to end the program: "))
-        close
     
     while gradeInput != "-1":
         with open('grades.txt', mode='w') as grades:
             gradeInput = grades.write(input("Enter grade, -1 to end: "))
-        return gradeInput
+        grades.close()
         
 # Call to write the grades in the text file.
 writeText()
