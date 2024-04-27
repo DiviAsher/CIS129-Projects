@@ -7,14 +7,15 @@
 # Write function
 def writeText():
     print()
-    with open('grades.txt', mode='w') as grades:
-        gradeInput = grades.write(input("Please enter the grades from the class, use -1 to end the program: "))
+    inputList = []
     
-    while gradeInput != "-1":
-        with open('grades.txt', mode='w') as grades:
-            gradeInput = grades.write(input("Enter grade, -1 to end: "))
-        grades.close()
-        
+    userInput = input("Please enter the grades from the class, type 'done' to end the program: ")
+
+    while userInput.lower() != 'done':
+        inputList.append(userInput)
+        userInput = input("Enter another grade, 'done' to end: ")
+
+    print("Recorded Grades:", inputList)
+
 # Call to write the grades in the text file.
 writeText()
-
