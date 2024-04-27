@@ -15,7 +15,9 @@ def writeText():
         inputList.append(userInput)
         userInput = input("Enter another grade, 'done' to end: ")
 
-    print("Recorded Grades:", inputList)
+    with open('grades.txt', mode='w') as grades:
+        print(inputList)
+        grades.close
 
 # Call to write the grades in the text file.
 writeText()
